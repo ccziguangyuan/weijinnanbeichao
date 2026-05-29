@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>魏晋南北朝 · 三百年风云</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- 导航栏 -->
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="#" class="nav-logo">
+            <span class="logo-icon">🏮</span>
+            <span class="logo-text">魏晋南北朝</span>
+        </a>
+        <div class="nav-links">
+            <a href="#timeline">时间线</a>
+            <a href="#articles">文章列表</a>
+            <a href="#about">关于</a>
+        </div>
+        <button class="nav-toggle" id="navToggle">☰</button>
+    </div>
+</nav>
+
+<!-- 首页英雄区 -->
+<section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+        <div class="hero-title-wrapper">
+            <div class="hero-subtitle">从曹魏到隋朝 · 公元220年–589年</div>
+            <h1 class="hero-title">三百年风云</h1>
+            <p class="hero-desc">
+                这是一个动荡与创造并存的时代——三国鼎立、五胡乱华、衣冠南渡、<br>
+                门阀政治、佛教传入、魏晋风度……370年的历史，100篇文章，<br>
+                带你走进中国历史上最纷繁复杂的时期。
+            </p>
+        </div>
+        <div class="hero-stats">
+            <div class="stat-item">
+                <span class="stat-number" id="statYears">370</span>
+                <span class="stat-label">年历史</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">100</span>
+                <span class="stat-label">篇文章</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">30+</span>
+                <span class="stat-label">王朝更迭</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">13</span>
+                <span class="stat-label">个专题</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 时间线概览 -->
+<section class="section" id="timeline">
+    <div class="container">
+        <h2 class="section-title">📜 时代脉络</h2>
+        <div class="timeline" id="timelineContainer">
+            <!-- 由 JS 动态生成 -->
+        </div>
+    </div>
+</section>
+
+<!-- 文章列表 -->
+<section class="section section-dark" id="articles">
+    <div class="container">
+        <h2 class="section-title">📖 文章目录</h2>
+        
+        <!-- 分类筛选 -->
+        <div class="filter-bar" id="filterBar">
+            <button class="filter-btn active" data-category="all">全部</button>
+        </div>
+        
+        <div class="articles-grid" id="articlesGrid">
+            <!-- 由 JS 动态生成 -->
+        </div>
+    </div>
+</section>
+
+<!-- 文章阅读弹窗 -->
+<div class="article-modal" id="articleModal">
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="modal-content">
+        <button class="modal-close" id="modalClose">✕</button>
+        <div class="modal-body" id="modalBody">
+            <article class="article-reader" id="articleReader">
+                <!-- 由 JS 动态填充 -->
+            </article>
+        </div>
+    </div>
+</div>
+
+<!-- 关于 -->
+<section class="section" id="about">
+    <div class="container">
+        <h2 class="section-title">🏮 关于这个系列</h2>
+        <div class="about-content">
+            <p>魏晋南北朝是中国历史上一个极为特殊的时期——它是秦统一以来最长的分裂期，也是民族大融合、文化大发展的关键阶段。</p>
+            <p>这个系列以100篇文章，系统梳理从公元220年曹丕代汉到589年隋灭陈的370年历史，涵盖政治、军事、文化、制度、社会等各方面，力求呈现一个立体而生动的魏晋南北朝。</p>
+            <div class="dynasty-chart" id="dynastyChart">
+                <!-- 由 JS 生成朝代更迭图 -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 页脚 -->
+<footer class="footer">
+    <div class="container">
+        <p>魏晋南北朝系列 · 三百年风云</p>
+    </div>
+</footer>
+
+<script src="js/articles-data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
